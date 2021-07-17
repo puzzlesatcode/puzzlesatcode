@@ -1,7 +1,7 @@
-function App() {
+function App () {
   return (
-    <div className="App">Home</div>
-  );
+    <div>Home</div>
+  )
 }
 
-export default App;
+export default App
