@@ -1,6 +1,25 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 # Project details
+## Tamanho de Fontes
+- as fontes do elemento pai estão medidas em %.
+- portanto foram usados as seguintes medidas.
+
+```scss
+html {
+  font-size: 87.5%; // 14px
+
+  @media only screen and (min-width: 768px) {
+    font-size: 75%; // 12px
+  }
+
+  @media only screen and (min-width: 1080px) {
+    font-size: 62.5%; // 10px
+  }
+}
+```
+
+- então `1rem` é equivalente a esses tamanhos em diferentes dimensões de telas.
 
 ## Padrões de commit
 - git add .
