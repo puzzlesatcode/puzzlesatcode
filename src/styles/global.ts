@@ -92,24 +92,28 @@ export const GlobalStyle = createGlobalStyle`
     --color-pink-700: #ff5c8a;
     --color-pink-800: #ff477e;
     --color-pink-900: #ff0a54;
-    --color-gay-50: #f8f9fa;
-    --color-gay-100: #e9ecef;
-    --color-gay-200: #dee2e6;
-    --color-gay-300: #ced4da;
-    --color-gay-400: #adb5bd;
-    --color-gay-500: #6c757d;
-    --color-gay-600: #495057;
-    --color-gay-700: #343a40;
-    --color-gay-800: #212529;
-    --color-gay-900: #111111;
+    --color-gray-50: #f8f9fa;
+    --color-gray-100: #e9ecef;
+    --color-gray-200: #dee2e6;
+    --color-gray-300: #ced4da;
+    --color-gray-400: #adb5bd;
+    --color-gray-500: #6c757d;
+    --color-gray-600: #495057;
+    --color-gray-700: #343a40;
+    --color-gray-800: #212529;
+    --color-gray-900: #111111;
   }
 
   * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
   }
 
   html {
+    scroll-behavior: smooth;
+    background-color: var(--color-gray-50);
     font-size: 87.5%; // 14px
 
     @media only screen and (min-width: 768px) {
