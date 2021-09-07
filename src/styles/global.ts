@@ -145,4 +145,8 @@ export const GlobalStyle = createGlobalStyle`
   option {
     font-family: 'Glory', sans-serif;
   }
+
+  ul {
+    list-style: none;
+  }
 `
