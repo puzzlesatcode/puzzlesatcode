@@ -1,12 +1,5 @@
-import { Header } from './components/Header'
+import { Routes } from './routes'
 
-function App () {
-  return (
-    <>
-      <Header />
-      <p>Home</p>
-    </>
-  )
-}
+const App = () => <Routes />
 
-export default App
+export { App }
