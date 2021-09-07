@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import styled, { css } from 'styled-components'
 
 interface NavigationProps {
@@ -71,15 +72,20 @@ const NavigationList = styled.ul`
 const NavigationListItem = styled.li`
   font-size: 1.8rem;
 
-  a {
-    text-decoration: none;
-    color: var(--color-gray-600);
-    transition: all .2s;
+  .active {
+    color: var(--color-orange-500);
+    font-weight: 700;
+  }
+`
 
-    &:hover {
-      color: var(--color-orange-500);
-      font-weight: 700;
-    }
+const NavigationListItemLink = styled(NavLink)`
+  text-decoration: none;
+  color: var(--color-gray-600);
+  transition: all .2s;
+
+  &:hover {
+    color: var(--color-orange-500);
+    font-weight: 700;
   }
 `
 
@@ -112,4 +118,4 @@ const ButtonOpenMenu = styled.button`
   }
 `
 
-export { Container, ImageHeader, Navigation, NavigationList, NavigationListItem, ContainerButtons, ButtonToggleTheme, ButtonOpenMenu }
+export { Container, ImageHeader, Navigation, NavigationList, NavigationListItem, NavigationListItemLink, ContainerButtons, ButtonToggleTheme, ButtonOpenMenu }

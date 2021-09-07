@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 // styles
 import {
@@ -7,6 +8,7 @@ import {
   Navigation,
   NavigationList,
   NavigationListItem,
+  NavigationListItemLink,
   ContainerButtons,
   ButtonToggleTheme,
   ButtonOpenMenu
@@ -23,23 +25,23 @@ const Header = () => {
 
   return (
     <Container>
-      <a href="/">
+      <Link to="/">
         <ImageHeader src={LogoPuzzles} alt="" />
-      </a>
+      </Link>
 
       <Navigation openMenu={menu}>
         <NavigationList>
           <NavigationListItem>
-            <a href="#">Overview</a>
+            <NavigationListItemLink exact to="/">Overview</NavigationListItemLink>
           </NavigationListItem>
           <NavigationListItem>
-            <a href="#">About</a>
+            <NavigationListItemLink strict to="/about">About</NavigationListItemLink>
           </NavigationListItem>
           <NavigationListItem>
-            <a href="#">Projects</a>
+            <NavigationListItemLink strict to="/projects">Projects</NavigationListItemLink>
           </NavigationListItem>
           <NavigationListItem>
-            <a href="#">Contact</a>
+            <NavigationListItemLink strict to="contact">Contact</NavigationListItemLink>
           </NavigationListItem>
         </NavigationList>
       </Navigation>
