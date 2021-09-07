@@ -1,7 +1,12 @@
-function App() {
+import { Header } from './components/Header'
+
+function App () {
   return (
-    <div className="App">Home</div>
-  );
+    <>
+      <Header />
+      <p>Home</p>
+    </>
+  )
 }
 
-export default App;
+export default App

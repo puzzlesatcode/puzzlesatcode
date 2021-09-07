@@ -1,13 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { StrictMode } from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
+import reportWebVitals from './reportWebVitals'
+
+// estilo global
+import { GlobalStyle } from './styles/global'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <StrictMode>
+    <GlobalStyle />
     <App />
-  </React.StrictMode>,
+  </StrictMode>,
   document.getElementById('root')
-);
+)
 
-reportWebVitals();
+reportWebVitals()
