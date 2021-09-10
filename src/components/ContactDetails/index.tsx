@@ -1,27 +1,41 @@
-import { AreaImage, Container, Section } from './styles'
+// styles
+import {
+  Container,
+  Section,
+  TitleHeader,
+  TextStrong,
+  AreaEmail,
+  AreaInput,
+  Button,
+  Text,
+  AreaImage,
+  ImageContact
+} from './styles'
+
+// images
 import tech from '../../assets/tech.jpg'
 
 const ContactDetails = () => {
   return (
     <Container>
       <Section>
-
-        <h1><strong>Easiest Way</strong> <br />
+        <TitleHeader>
+          <TextStrong>Easiest Way</TextStrong>
           to Deploy Your Backend Code
-        </h1>
-        <p>
+        </TitleHeader>
+        <Text>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Optio, ullam temporibus.
           Corrupti sit quae enim esse vitae laboriosam dolorem iure harum nihil?
           Sapiente aliquam error veritatis quia enim asperiores pariatur.
-        </p>
-        <div className='div-email'>
-          <input placeholder="Your E-mail" /><button>Ship Now for Free</button>
-        </div>
-        <p><strong>After first free project.</strong> $5/mo/project</p>
+        </Text>
+        <AreaEmail className='div-email'>
+          <AreaInput placeholder="Your E-mail" /><Button>Ship Now for Free</Button>
+        </AreaEmail>
+        <Text><TextStrong>After first free project.</TextStrong> $5/mo/project</Text>
       </Section>
       <AreaImage>
-        <img src={tech} alt="Imagem dos contados" className='img-contact'/>
+        <ImageContact src={tech} alt="Imagem dos contados" />
       </AreaImage>
     </Container>
   )
