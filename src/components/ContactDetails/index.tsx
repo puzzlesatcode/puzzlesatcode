@@ -29,7 +29,7 @@ const ContactDetails = () => {
           Corrupti sit quae enim esse vitae laboriosam dolorem iure harum nihil?
           Sapiente aliquam error veritatis quia enim asperiores pariatur.
         </Text>
-        <AreaEmail className='div-email'>
+        <AreaEmail>
           <AreaInput placeholder="Your E-mail" /><Button>Ship Now for Free</Button>
         </AreaEmail>
         <Text><TextStrong>After first free project.</TextStrong> $5/mo/project</Text>
